@@ -24,7 +24,7 @@ public class ModCreativeTab {
                 pOutput.accept(ModItems.STONECOIN_BLOCK.get());
             })
             .build());
-    public static void register(IEventBus eventBus){
+    public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
     }
 }
