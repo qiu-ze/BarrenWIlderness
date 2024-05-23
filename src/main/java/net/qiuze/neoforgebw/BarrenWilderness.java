@@ -8,6 +8,7 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import net.qiuze.neoforgebw.block.ModBlocks;
 import net.qiuze.neoforgebw.item.ModCreativeTab;
 import net.qiuze.neoforgebw.item.ModItems;
 import org.slf4j.Logger;
@@ -22,6 +23,7 @@ public class BarrenWilderness
         modEventBus.addListener(this::commonSetup);
         ModItems.register(modEventBus);
         ModCreativeTab.register(modEventBus);
+        ModBlocks.register(modEventBus);
         NeoForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::commonSetup);
 

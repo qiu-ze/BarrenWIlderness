@@ -21,6 +21,7 @@ public class ModCreativeTab {
             .icon(() ->ModItems.STONECOIN.get().getDefaultInstance())
             .displayItems((pParameters, pOutput) -> {
                 pOutput.accept(ModItems.STONECOIN.get());
+                pOutput.accept(ModItems.STONECOIN_BLOCK.get());
             })
             .build());
     public static void register(IEventBus eventBus){
