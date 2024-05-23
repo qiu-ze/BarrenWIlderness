@@ -1,3 +1,5 @@
 {
-  "item.neoforgebw.stonecoin": "StoneCoin"
+  "item.neoforgebw.stonecoin": "StoneCoin",
+  "creativetab.barren_tab": "Barren Tab",
+  "block.neoforgebw.stonecoin_block": "StoneCoinBlock"
 }
