@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": {"model": "neoforgebw:block/stonecoin_block_model"}
+    "": {
+      "model": "neoforgebw:block/stonecoin_block_model"
+    }
   }
 }

@@ -2,5 +2,6 @@
   "item.neoforgebw.stonecoin": "StoneCoin",
   "creativetab.barren_tab": "Barren Tab",
   "block.neoforgebw.stonecoin_block": "StoneCoinBlock",
-  "item.neoforgebw.blood": "blood"
+  "item.neoforgebw.blood": "blood",
+  "block.neoforgebw.blood_block": "glassFillOfBlood"
 }

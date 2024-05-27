@@ -7,6 +7,7 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.qiuze.neoforgebw.BarrenWilderness;
+import net.qiuze.neoforgebw.block.ModBlocks;
 
 import java.util.function.Supplier;
 
@@ -21,8 +22,10 @@ public class ModCreativeTab {
             .icon(() ->ModItems.STONECOIN.get().getDefaultInstance())
             .displayItems((pParameters, pOutput) -> {
                 pOutput.accept(ModItems.STONECOIN.get());
-                pOutput.accept(ModItems.STONECOIN_BLOCK.get());
                 pOutput.accept(ModItems.BLOOD.get());
+                pOutput.accept(ModItems.STONECOIN_BLOCK.get());
+                pOutput.accept(ModBlocks.BLOOD_BLOCK.get());
+
             })
             .build());
     public static void register(IEventBus eventBus) {
