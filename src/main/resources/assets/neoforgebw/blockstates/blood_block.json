@@ -1,10 +1,10 @@
 {
-"variants": {
-        "fire=false": {
-            "model": "neoforgebw:block/blood_off"
-        },
-        "fire=true": {
-            "model": "neoforgebw: block/blood_on"
-        }
+  "variants": {
+    "fire=false": {
+      "model": "neoforgebw:block/blood_off"
+    },
+    "fire=true": {
+      "model": "neoforgebw:block/blood_on"
     }
+  }
 }
