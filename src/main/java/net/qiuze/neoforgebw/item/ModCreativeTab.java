@@ -22,6 +22,7 @@ public class ModCreativeTab {
             .displayItems((pParameters, pOutput) -> {
                 pOutput.accept(ModItems.STONECOIN.get());
                 pOutput.accept(ModItems.STONECOIN_BLOCK.get());
+                pOutput.accept(ModItems.BLOOD.get());
             })
             .build());
     public static void register(IEventBus eventBus) {
