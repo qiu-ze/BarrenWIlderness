@@ -2,5 +2,13 @@
   "parent": "minecraft:item/generated",
   "textures": {
     "layer0": "neoforgebw:item/blood"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "neoforgebw:size": 32
+      },
+      "model": "neoforgebw:textures/item/blood_fire"
+    }
+  ]
 }
