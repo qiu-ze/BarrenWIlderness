@@ -1,7 +1,8 @@
 {
-  "item.neoforgebw.stonecoin": "石币",
-  "creativetab.barren_tab": "蛮荒",
+  "block.neoforgebw.blood_block": "装满血的玻璃块",
   "block.neoforgebw.stonecoin_block": "石币块",
+  "creativetab.barren_tab": "蛮荒",
   "item.neoforgebw.blood": "血",
-  "block.neoforgebw.blood_block": "装满血的玻璃块"
+  "item.neoforgebw.stonecoin": "石币",
+  "item.neoforgebw.star_apple": "星辰果"
 }

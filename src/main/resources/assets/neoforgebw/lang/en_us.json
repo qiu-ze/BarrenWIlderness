@@ -1,7 +1,8 @@
 {
-  "item.neoforgebw.stonecoin": "StoneCoin",
-  "creativetab.barren_tab": "Barren Tab",
+  "block.neoforgebw.blood_block": "glassFillOfBlood",
   "block.neoforgebw.stonecoin_block": "StoneCoinBlock",
+  "creativetab.barren_tab": "Barren Tab",
   "item.neoforgebw.blood": "blood",
-  "block.neoforgebw.blood_block": "glassFillOfBlood"
+  "item.neoforgebw.stonecoin": "StoneCoin",
+  "item.neoforgebw.star_apple": "StarApple"
 }

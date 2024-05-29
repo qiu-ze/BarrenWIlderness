@@ -8,7 +8,7 @@
       "predicate": {
         "neoforgebw:size": 32
       },
-      "model": "neoforgebw:textures/item/blood_fire"
+      "model": "neoforgebw:item/blood_fire"
     }
   ]
 }
