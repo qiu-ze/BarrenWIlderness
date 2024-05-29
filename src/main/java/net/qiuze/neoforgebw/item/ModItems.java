@@ -26,7 +26,7 @@ public class ModItems {
 
     public static final Supplier<Item> BLOOD = ITEMS.register("blood",()-> new BloodItem(new Item.Properties()));
 
-    public static final Supplier<Item> STAR_APPLE = ITEMS.register("star_apple",()->new StarAppleItem());
+    public static final Supplier<Item> STAR_APPLE = ITEMS.register("star_apple", StarAppleItem::new);
 
     public static final Supplier<Potion> BLOOD_POTION = POTIONS.register("blood",()->new Potion(new MobEffectInstance(MobEffects.HEALTH_BOOST,3600)));
 
