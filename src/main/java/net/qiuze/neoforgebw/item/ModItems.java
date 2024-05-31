@@ -5,11 +5,13 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.alchemy.Potion;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.qiuze.neoforgebw.BarrenWilderness;
 import net.qiuze.neoforgebw.block.ModBlocks;
+import net.qiuze.neoforgebw.item.custom.BloodDevilSword;
 import net.qiuze.neoforgebw.item.custom.BloodItem;
 import net.qiuze.neoforgebw.item.custom.StarAppleItem;
 import net.qiuze.neoforgebw.item.custom.StoneCoinItem;
@@ -29,6 +31,8 @@ public class ModItems {
     public static final Supplier<Item> STAR_APPLE = ITEMS.register("star_apple", StarAppleItem::new);
 
     public static final Supplier<Potion> BLOOD_POTION = POTIONS.register("blood",()->new Potion(new MobEffectInstance(MobEffects.HEALTH_BOOST,3600)));
+
+    public static final Supplier<Item> BLOOD_DEVIL_SWORD = ITEMS.register("blood_devil_sword", BloodDevilSword::new);
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -24,6 +24,7 @@ public class ModCreativeTab {
                 pOutput.accept(ModItems.STONECOIN.get());
                 pOutput.accept(ModItems.BLOOD.get());
                 pOutput.accept(ModItems.STAR_APPLE.get());
+                pOutput.accept(ModItems.BLOOD_DEVIL_SWORD.get());
                 pOutput.accept(ModItems.STONECOIN_BLOCK.get());
                 pOutput.accept(ModBlocks.BLOOD_BLOCK.get());
 
