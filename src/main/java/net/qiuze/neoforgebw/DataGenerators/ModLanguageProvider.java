@@ -12,7 +12,6 @@ public class ModLanguageProvider extends LanguageProvider {
 
     @Override
     public void addTranslations(){
-        this.add(6*);
         this.add(ModItems.BLOOD_DEVIL_SWORD.get(),"Blood Devil Sword");
         this.add(ModItems.BLOOD.get(),"blood");
         this.add("object.neoforgebw.example_object","Neoforgebw Object");
