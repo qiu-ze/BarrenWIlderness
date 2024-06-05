@@ -1,16 +1,20 @@
 package net.qiuze.neoforgebw.item;
 
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.util.LazyLoadedValue;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
+import net.qiuze.neoforgebw.BarrenWilderness;
+import net.qiuze.neoforgebw.block.custom.BloodBlock;
 
 import java.util.function.Supplier;
 
 public enum ModItemTiers implements Tier {
-    BLOOD(5,10000,15F,500F,60,()->Ingredient.of(Items.NETHERITE_INGOT));
+    BLOOD(4,10000,15F,500F,60,()->Ingredient.of(Items.NETHERITE_INGOT));
 
     private final int level;
     private final int uses;
@@ -54,7 +58,7 @@ public enum ModItemTiers implements Tier {
 
     @Override
     public TagKey<Block> getIncorrectBlocksForDrops() {
-        return null;//获取某个特定标签键的方块，用于掉落（drops）的处理。标识那些在特定情况下不应掉落的方块。
+        return TagKey.create(BuiltInRegistries.BLOCK.key(),new ResourceLocation(BarrenWilderness.MODID,"empty"));
     }
     @Override
     public Ingredient getRepairIngredient() {

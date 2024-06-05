@@ -4,5 +4,9 @@
   "creativetab.barren_tab": "Barren Tab",
   "item.neoforgebw.blood": "blood",
   "item.neoforgebw.stonecoin": "StoneCoin",
-  "item.neoforgebw.star_apple": "StarApple"
+  "item.neoforgebw.star_apple": "StarApple",
+  "item.neoforgebw.blood_pickaxe": "BloodPickaxe",
+  "item.neoforgebw.blood_axe": "BloodAxe",
+  "item.neoforgebw.blood_hoe": "BloodHoe",
+  "item.neoforgebw.blood_shovel": "BloodShovel"
 }
