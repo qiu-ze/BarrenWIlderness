@@ -1,7 +1,7 @@
 package net.qiuze.neoforgebw.item.custom;
 
 import net.minecraft.world.item.PickaxeItem;
-import net.qiuze.neoforgebw.item.ModItemTiers;
+import net.qiuze.neoforgebw.item.custom.tools.ModItemTiers;
 
 public class BloodPickaxe extends PickaxeItem {
     public BloodPickaxe() {

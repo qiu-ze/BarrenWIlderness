@@ -7,7 +7,11 @@
   "item.neoforgebw.star_apple": "星辰果",
   "item.neoforgebw.blood_devil_sword": "饮血引魔剑",
   "item.neoforgebw.blood_pickaxe": "血之镐",
-  "item.neoforgebw.blood_axe": "染血之斧",
+  "item.neoforgebw.blood_axe": "嗜血战斧",
   "item.neoforgebw.blood_hoe": "血锄",
-  "item.neoforgebw.blood_shovel": "血铲"
+  "item.neoforgebw.blood_shovel": "血铲",
+  "item.neoforgebw.blood_helmet": "染血头盔",
+  "item.neoforgebw.blood_chestplate": "血衣服",
+  "item.neoforgebw.blood_leggings": "烈血腿",
+  "item.neoforgebw.blood_boots": "血靴"
 }

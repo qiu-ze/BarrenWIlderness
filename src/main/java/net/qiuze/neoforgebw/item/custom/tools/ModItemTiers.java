@@ -1,16 +1,20 @@
-package net.qiuze.neoforgebw.item;
+package net.qiuze.neoforgebw.item.custom.tools;
 
+import net.minecraft.Util;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.tags.TagKey;
 import net.minecraft.util.LazyLoadedValue;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.common.Tags;
 import net.qiuze.neoforgebw.BarrenWilderness;
-import net.qiuze.neoforgebw.block.custom.BloodBlock;
+import net.qiuze.neoforgebw.item.ModItems;
 
+import java.util.EnumMap;
+import java.util.List;
 import java.util.function.Supplier;
 
 public enum ModItemTiers implements Tier {
@@ -31,7 +35,6 @@ public enum ModItemTiers implements Tier {
         this.enchantmentValue =  pEnchantmentValue;
         this.repairIngredient = new LazyLoadedValue<>(pRepairIngredient);
     }
-
     public int getLevel() {
         return this.level;
     }
@@ -64,4 +67,33 @@ public enum ModItemTiers implements Tier {
     public Ingredient getRepairIngredient() {
         return this.repairIngredient.get();
     }
+
+    public static final ArmorMaterial BLOOD_ARMOR_MATERIAL = new ArmorMaterial(
+            Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                map.put(ArmorItem.Type.BOOTS, 30);
+                map.put(ArmorItem.Type.LEGGINGS, 60);
+                map.put(ArmorItem.Type.CHESTPLATE, 80);
+                map.put(ArmorItem.Type.HELMET, 30);
+                map.put(ArmorItem.Type.BODY, 20);
+            }),
+
+            30,
+
+            SoundEvents.ARMOR_EQUIP_NETHERITE,
+
+            () -> Ingredient.of(ModItems.BLOOD.get()),
+
+            List.of(
+
+                    new ArmorMaterial.Layer(
+                            new ResourceLocation(BarrenWilderness.MODID, "blood")
+                    ),
+
+                    new ArmorMaterial.Layer(
+                            new ResourceLocation(BarrenWilderness.MODID, "blood"), "_overlay", true
+                    )
+            ),
+            1.0F,
+            10.0F
+    );
 }

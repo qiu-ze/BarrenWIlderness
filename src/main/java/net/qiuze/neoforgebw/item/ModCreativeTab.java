@@ -29,6 +29,10 @@ public class ModCreativeTab {
                 pOutput.accept(ModItems.BLOOD_SHOVEL.get());
                 pOutput.accept(ModItems.BLOOD_AXE.get());
                 pOutput.accept(ModItems.BLOOD_HOE.get());
+                pOutput.accept(ModItems.BLOOD_BOOTS.get());
+                pOutput.accept(ModItems.BLOOD_CHESTPLATE.get());
+                pOutput.accept(ModItems.BLOOD_LEGGINGS.get());
+                pOutput.accept(ModItems.BLOOD_HELMET.get());
                 pOutput.accept(ModItems.STONECOIN_BLOCK.get());
                 pOutput.accept(ModBlocks.BLOOD_BLOCK.get());
             })

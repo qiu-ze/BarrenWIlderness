@@ -2,7 +2,7 @@ package net.qiuze.neoforgebw.item.custom;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SwordItem;
-import net.qiuze.neoforgebw.item.ModItemTiers;
+import net.qiuze.neoforgebw.item.custom.tools.ModItemTiers;
 
 public class BloodDevilSword extends SwordItem {
     public BloodDevilSword(){

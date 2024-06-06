@@ -1,8 +1,10 @@
 package net.qiuze.neoforgebw.item;
 
+import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.alchemy.Potion;
@@ -11,6 +13,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.qiuze.neoforgebw.BarrenWilderness;
 import net.qiuze.neoforgebw.block.ModBlocks;
 import net.qiuze.neoforgebw.item.custom.*;
+import net.qiuze.neoforgebw.item.custom.tools.ModItemTiers;
 import java.util.function.Supplier;
 
 public class ModItems {
@@ -37,6 +40,30 @@ public class ModItems {
     public static final Supplier<Item> BLOOD_SHOVEL = ITEMS.register("blood_shovel",BloodShovel::new);
 
     public static final Supplier<Item> BLOOD_HOE = ITEMS.register("blood_hoe",BloodHoe::new);
+
+    public static final Supplier<ArmorItem> BLOOD_HELMET = ITEMS.register("blood_helmet",()->new ArmorItem(
+             Holder.direct(ModItemTiers.BLOOD_ARMOR_MATERIAL),
+            ArmorItem.Type.HELMET,
+            (new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(33)))
+    ));
+
+    public static final Supplier<ArmorItem> BLOOD_CHESTPLATE = ITEMS.register("blood_chestplate",()->new ArmorItem(
+            Holder.direct(ModItemTiers.BLOOD_ARMOR_MATERIAL),
+            ArmorItem.Type.CHESTPLATE,
+            (new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(33)))
+    ));
+
+    public static final Supplier<ArmorItem> BLOOD_LEGGINGS = ITEMS.register("blood_leggings",()->new ArmorItem(
+            Holder.direct(ModItemTiers.BLOOD_ARMOR_MATERIAL),
+            ArmorItem.Type.LEGGINGS,
+            (new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(33)))
+    ));
+
+    public static final Supplier<ArmorItem> BLOOD_BOOTS = ITEMS.register("blood_boots",()->new ArmorItem(
+            Holder.direct(ModItemTiers.BLOOD_ARMOR_MATERIAL),
+            ArmorItem.Type.BOOTS,
+            (new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(33))))
+    );
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

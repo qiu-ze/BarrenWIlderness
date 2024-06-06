@@ -1,8 +1,7 @@
 package net.qiuze.neoforgebw.item.custom;
 
 import net.minecraft.world.item.HoeItem;
-import net.minecraft.world.item.PickaxeItem;
-import net.qiuze.neoforgebw.item.ModItemTiers;
+import net.qiuze.neoforgebw.item.custom.tools.ModItemTiers;
 
 public class BloodHoe extends HoeItem {
     public BloodHoe(){

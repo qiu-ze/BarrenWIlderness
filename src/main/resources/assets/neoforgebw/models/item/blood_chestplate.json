@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/diamond_chestplate",
+  "textures": {
+    "layer0": "neoforgebw:item/blood_chestplate"
+  }
+}
