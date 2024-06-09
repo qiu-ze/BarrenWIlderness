@@ -9,6 +9,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.qiuze.neoforgebw.BarrenWilderness;
+import net.qiuze.neoforgebw.block.custom.BingBlock;
 import net.qiuze.neoforgebw.block.custom.BloodBlock;
 import net.qiuze.neoforgebw.block.custom.StoneCoinBlock;
 import net.qiuze.neoforgebw.block.custom.SwordRackBlock;
@@ -23,10 +24,12 @@ public class ModBlocks {
     public static final Supplier<Block> STONECOIN_BLOCK = BLOCKS.register("stonecoin_block", StoneCoinBlock::new);
 
     public static final Supplier<Block> BLOOD_BLOCK = registerBlock("blood_block",()->new
-            BloodBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).strength(6f).requiresCorrectToolForDrops()
+            BloodBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).strength(6f).requiresCorrectToolForDrops().noOcclusion()
             .lightLevel(state->state.getValue(BloodBlock.FIRE)?15:0)));
 
     public static final Supplier<Block> SWORD_RACK_BLOCK = registerBlock("sword_rack_block",SwordRackBlock::new);
+
+    public static final Supplier<Block> BING_BLOCK = registerBlock("bing_block", BingBlock::new);
 
 
     public static Supplier<Block> registerBlock(String name,Supplier<Block> block){
