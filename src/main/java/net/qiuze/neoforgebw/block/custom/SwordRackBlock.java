@@ -43,7 +43,7 @@ public class SwordRackBlock extends Block implements SimpleWaterloggedBlock {
     }
 
     public SwordRackBlock(){
-        super(Properties.ofFullCopy(Blocks.STONE).strength(5).noCollission());
+        super(Properties.ofFullCopy(Blocks.STONE).strength(5));
         this.registerDefaultState(this.defaultBlockState().setValue(WATERLOGGED,Boolean.valueOf(false)));
     }
 
