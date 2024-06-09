@@ -1,17 +1,18 @@
 {
   "block.neoforgebw.blood_block": "glassFillOfBlood",
   "block.neoforgebw.stonecoin_block": "StoneCoinBlock",
+  "block.neoforgebw.sword_rack_block": "SwordRackBlock",
   "creativetab.barren_tab": "Barren Tab",
   "item.neoforgebw.blood": "blood",
-  "item.neoforgebw.stonecoin": "StoneCoin",
-  "item.neoforgebw.star_apple": "StarApple",
-  "item.neoforgebw.blood_devil_sword": "BloodDevilSword",
-  "item.neoforgebw.blood_pickaxe": "BloodPickaxe",
   "item.neoforgebw.blood_axe": "BloodAxe",
-  "item.neoforgebw.blood_hoe": "BloodHoe",
-  "item.neoforgebw.blood_shovel": "BloodShovel",
-  "item.neoforgebw.blood_helmet": "BloodHelmet",
+  "item.neoforgebw.blood_boots": "BloodBoots",
   "item.neoforgebw.blood_chestplate": "BloodChestplate",
+  "item.neoforgebw.blood_devil_sword": "BloodDevilSword",
+  "item.neoforgebw.blood_helmet": "BloodHelmet",
+  "item.neoforgebw.blood_hoe": "BloodHoe",
   "item.neoforgebw.blood_leggings": "BloodLeggings",
-  "item.neoforgebw.blood_boots": "BloodBoots"
+  "item.neoforgebw.blood_pickaxe": "BloodPickaxe",
+  "item.neoforgebw.blood_shovel": "BloodShovel",
+  "item.neoforgebw.star_apple": "StarApple",
+  "item.neoforgebw.stonecoin": "StoneCoin"
 }

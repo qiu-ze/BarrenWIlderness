@@ -11,6 +11,8 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.qiuze.neoforgebw.BarrenWilderness;
 import net.qiuze.neoforgebw.block.custom.BloodBlock;
 import net.qiuze.neoforgebw.block.custom.StoneCoinBlock;
+import net.qiuze.neoforgebw.block.custom.SwordRackBlock;
+
 import java.util.function.Supplier;
 
 import static net.qiuze.neoforgebw.item.ModItems.ITEMS;
@@ -24,6 +26,7 @@ public class ModBlocks {
             BloodBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).strength(6f).requiresCorrectToolForDrops()
             .lightLevel(state->state.getValue(BloodBlock.FIRE)?15:0)));
 
+    public static final Supplier<Block> SWORD_RACK_BLOCK = registerBlock("sword_rack_block",SwordRackBlock::new);
 
 
     public static Supplier<Block> registerBlock(String name,Supplier<Block> block){

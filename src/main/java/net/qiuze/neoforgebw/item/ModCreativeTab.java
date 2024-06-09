@@ -35,6 +35,7 @@ public class ModCreativeTab {
                 pOutput.accept(ModItems.BLOOD_HELMET.get());
                 pOutput.accept(ModItems.STONECOIN_BLOCK.get());
                 pOutput.accept(ModBlocks.BLOOD_BLOCK.get());
+                pOutput.accept(ModBlocks.SWORD_RACK_BLOCK.get());
             })
             .build());
     public static void register(IEventBus eventBus) {

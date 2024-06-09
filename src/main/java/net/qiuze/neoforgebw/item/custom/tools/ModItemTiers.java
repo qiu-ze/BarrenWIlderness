@@ -9,7 +9,6 @@ import net.minecraft.util.LazyLoadedValue;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
-import net.neoforged.neoforge.common.Tags;
 import net.qiuze.neoforgebw.BarrenWilderness;
 import net.qiuze.neoforgebw.item.ModItems;
 
@@ -27,7 +26,7 @@ public enum ModItemTiers implements Tier {
     private final int enchantmentValue;
     private final LazyLoadedValue<Ingredient> repairIngredient;
 
-    private ModItemTiers(int pLevel, int pUses, float pSpeed, float pDamage,int pEnchantmentValue,Supplier<Ingredient> pRepairIngredient) {
+    ModItemTiers(int pLevel, int pUses, float pSpeed, float pDamage, int pEnchantmentValue, Supplier<Ingredient> pRepairIngredient) {
         this.level = pLevel;
         this.uses = pUses;
         this.speed = pSpeed;
