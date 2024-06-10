@@ -3,6 +3,7 @@ package net.qiuze.neoforgebw.block;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -24,7 +25,7 @@ public class ModBlocks {
     public static final Supplier<Block> STONECOIN_BLOCK = BLOCKS.register("stonecoin_block", StoneCoinBlock::new);
 
     public static final Supplier<Block> BLOOD_BLOCK = registerBlock("blood_block",()->new
-            BloodBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).strength(6f).requiresCorrectToolForDrops().noOcclusion()
+            BloodBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLOWSTONE).strength(5f).requiresCorrectToolForDrops().noOcclusion()
             .lightLevel(state->state.getValue(BloodBlock.FIRE)?15:0)));
 
     public static final Supplier<Block> SWORD_RACK_BLOCK = registerBlock("sword_rack_block",SwordRackBlock::new);
