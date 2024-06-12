@@ -25,8 +25,6 @@ public class BarrenWilderness
         ModCreativeTab.register(modEventBus);
         ModBlocks.register(modEventBus);
         NeoForge.EVENT_BUS.register(this);
-        modEventBus.addListener(this::commonSetup);
-
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)

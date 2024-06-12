@@ -1,7 +1,6 @@
 package net.qiuze.neoforgebw.DataGenerators;
 
 import net.minecraft.data.PackOutput;
-import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.common.data.LanguageProvider;
 import net.qiuze.neoforgebw.item.ModItems;
 
